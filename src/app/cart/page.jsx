@@ -24,7 +24,7 @@ const Cart = () => {
   return (
     <>
     <Breadcrumd pageName={'My Cart'} /> 
-    <section className='cart'>
+    <section className='mycart'>
         <div className='container-fluid px-lg-5'>
             <div className='row'>
                 <div className='col-md-9'>
