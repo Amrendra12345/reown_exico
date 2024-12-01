@@ -1,16 +1,9 @@
-import { Inter, Nunito } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/layout/navbar";
-import Footer from "@/components/layout/footer";
+import { Inter } from "next/font/google";
+import "../styles/globals.scss";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"]});
-const nunito = Nunito({
-  weight: ['600', '700', '800'],
-  style: ['normal'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-nunito'
-})
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,13 +12,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={ inter.className }>
-      <body className="overflow-x-hidden">
-       <Navbar/>
-      {children}
-      <Footer/>
-      </body>
-
+    <html lang="en">
+      <body className={inter.className}>
+        <Navbar/>
+         {children}
+         <Footer/>
+        </body>
     </html>
   );
 }

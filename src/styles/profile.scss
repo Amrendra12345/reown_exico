@@ -1,0 +1,71 @@
+.profile{
+    .profile_wrapper{
+       margin: 80px 0 120px;
+       .profile_content{
+         .heading{
+            border-bottom: 1px solid #ddd;
+            .titile{
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+        }
+        label{
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+        .form-control{
+            border-radius: 2px;
+            padding: 10px 8px;
+        }
+       }
+    }
+    .update_btn{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .btn{
+            border-radius: 4px;
+            padding: 10px 26px;
+            background: #512ec3;
+          &:hover{
+            background: #4527a8;
+          }
+        }
+    }
+
+}
+.tickets-table{
+    table{          
+        &>thead{
+          &>tr{
+              &>td{
+                  font-weight: 600;
+                  color: #222;
+              }
+          }
+        }
+        &>tbody{
+          &>tr{
+              &>td{
+                  font-weight: 400;
+                  font-size: 1rem;
+                  padding: 0.65rem 0.5rem;
+                  color: #222;
+                  &.Urgent{
+                      color:#ff5252
+                  }
+                  &.Medium{
+                     color: #50c6e9;
+                  }
+                  &.High{
+                      color: #ffb74f;
+                  }
+                  &.Low{
+                      color: #43d9a3;
+                  }
+              }
+          }
+        }
+      }
+}

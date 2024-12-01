@@ -1,16 +1,19 @@
-import Blog from "@/components/homeSection/blog";
-import Gallary from "@/components/homeSection/gallary";
-import Hero from "@/components/homeSection/hero";
-import Product from "@/components/homeSection/product";
-import Image from "next/image";
+
+import FeatureProduct from "@/components/homeCompinents/feature-product";
+import Hero from "@/components/homeCompinents/hero";
+import Offer from "@/components/homeCompinents/offer";
+import Support from "@/components/homeCompinents/support";
+
 
 export default function Home() {
+   
   return (
-    <>
-      <Hero/>
-      <Gallary/>
-      <Product/>
-      <Blog/>
-    </>
+   <>
+   <Hero/>
+   <Support/>
+   <Offer/>
+   <FeatureProduct/>
+   
+   </>
   );
 }

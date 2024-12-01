@@ -1,0 +1,23 @@
+.offser{
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+        .img-thumani{
+            position: relative;             
+            border-radius: 5px;
+            overflow: hidden;
+            transition: all 0.6s;
+            img{
+                width: 100%;
+                height: auto;
+                transition: all 0.8s;
+            }   
+            &:hover{
+                img{
+                    transform: scale(1.15);
+                }
+            }        
+        }
+    }
+}

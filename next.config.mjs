@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+
+const nextConfig = {
+    sassOptions: {
+        additionalData: `$var: red;`,
+      },
+      images:{
+         loader: "default",
+         domains: ["localhost"],
+      }
+};
 
 export default nextConfig;

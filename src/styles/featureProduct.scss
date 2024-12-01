@@ -1,0 +1,205 @@
+.featureProduct {
+    .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #222;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                width: 65px;
+                height: 2px;
+                position: absolute;
+                top: 58%;
+                background-color: rgb(255, 91, 31);
+            }
+
+            &::before {
+                left: -39%;
+            }
+
+            &::after {
+                right: -39%;
+            }
+
+        }
+    }
+
+    .nav-tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-color: transparent;
+        gap: 2rem;
+
+        .nav-item {
+            border-color: transparent;
+
+            .nav-link {
+                text-transform: uppercase;
+                color: #222;
+                font-weight: 500;
+                border-color: transparent;
+                padding: 1rem 0 0.2rem;
+                border-bottom: 2px solid transparent;
+
+                &:hover {
+                    border-color: transparent;
+                    border-bottom: 2px solid rgb(235, 65, 4);
+                }
+
+                &.active {
+                    border-bottom-color: rgb(235, 65, 4);
+                }
+            }
+
+        }      
+    }
+    .wprapper {
+        padding-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        .items {
+            border: 1px solid transparent;
+            cursor: pointer;
+            border-radius: 4px;
+            .img-figure {   
+                background-color: #f4f4f4;
+                width: 100%;
+                height: 350px;
+                padding:2rem 1rem 3rem;
+                position: relative; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                .img-contener{
+                    position: relative;
+                    width: 320px;
+                    height: 280px;
+                    padding: 1rem;
+
+                }
+                .social{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background-color:transparent;
+                    bottom: -100%;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    transition: all 0.5s;
+                    gap: 1rem;
+                    
+                    .social_icon{
+                        margin-top: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                        gap: 1rem;
+                        padding-bottom: 1rem;
+                        position: relative;
+                        span{
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 50%;
+                            background-color: #ef3a1a;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            transition: all 0.7s;
+                            svg{
+                                color: #fff;
+                                font-size: 1.2rem;
+                            }
+                            &:first-child{
+                                position: absolute;
+                                bottom: 92px;
+                            }
+                            &:nth-child(2){
+                                position: absolute;
+                                bottom: 46px;
+                            }
+                            &:nth-child(3){
+                                position: absolute;
+                                bottom:0;
+                            }
+                        }
+                    }
+                }
+               &:hover{
+                 .social{
+                    bottom: 0;                    
+                    .social_icon{
+                        span{
+                            position: relative;
+                            &:first-child{
+                                position: relative;
+                                bottom: 0;
+                            } 
+                            &:nth-child(2){
+                                position: relative;
+                                bottom: 0;
+                            }
+                            &:nth-child(3){
+                                position: relative;
+                                bottom: 0;
+                            } 
+                        }
+                    }
+                 }
+               }
+            }
+            .stars_icons{
+                padding: 1.5rem 0 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.5rem;
+                span{
+                    svg{
+                        color: #b6b6b6;
+                    }
+                }
+            }
+            p{
+                color: #9e9e9e;
+                font-weight: 500;
+                text-align: center;
+                font-size: 0.85rem;
+            }
+            .prices{
+                padding: 0 0 1.2rem;
+                span{
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                    gap: 6px;
+                    color: #222;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    svg{
+                        font-size: 0.8rem;
+                        margin-top: 3px;
+                    }
+                del{
+                    margin-left: 10px;
+                    color: #777;
+                    font-weight: 500;
+                }
+                }
+            }
+        }
+    }
+}

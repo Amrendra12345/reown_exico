@@ -1,0 +1,21 @@
+.support{
+    li{
+        color: #222;
+        font-weight: 500;
+        font-size: 0.9rem;
+        svg{
+            font-size: 1.5rem;
+            color: #dc3545;
+            transition: all 0.5s;
+        }
+        span{
+            text-transform: uppercase;
+        }
+        &:hover{
+            svg{
+                color: #222;
+                transform:rotateY(-180deg)
+            }
+        }
+    }
+}
